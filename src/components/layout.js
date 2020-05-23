@@ -27,7 +27,6 @@ const styles = {
     },
     link: {
         color: 'black',
-        // textShadow: 'none',
         backgroundImage: 'none',
     },
     footer: {
@@ -66,7 +65,7 @@ export default function Layout({ children }) {
                 {children}
             </div>
             <footer style={styles.footer}>
-                © 2020 Zein Hajj-Ali · <a style={{backgroundImage: 'none'}} href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+                © 2020 Zein Hajj-Ali · <a style={styles.link} href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
             </footer>
         </div>
     )

@@ -3,7 +3,10 @@ import Header from '../components/header'
 import Layout from '../components/layout'
 
 const styles = {
-
+    link: {
+        backgroundImage: 'none',
+        color: 'black',
+    },
 }
 
 export default function Contact() {
@@ -12,9 +15,9 @@ export default function Contact() {
             <Header headerText="Contact Me" />
             <p>You can contact me using any of the following:</p>
             <ul>
-                <li>Email: <a href="mailto:zeinhajjali@outlook.com">zeinhajjali@outlook.com</a></li>
-                <li>Telephone: <a href="tel:+15148144665">+1-(514)-814-4665</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/zeinhajjali">Zein Hajj-Ali</a></li>
+                <li>Email: <a style={styles.link} href="mailto:zeinhajjali@outlook.com"><u>zeinhajjali@outlook.com</u></a></li>
+                <li>Telephone: <a style={styles.link} href="tel:+15148144665"><u>+1-(514)-814-4665</u></a></li>
+                <li>LinkedIn: <a style={styles.link} href="https://linkedin.com/in/zeinhajjali"><u>Zein Hajj-Ali</u></a></li>
             </ul>
         </Layout>
     )
