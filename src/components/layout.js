@@ -30,7 +30,7 @@ const styles = {
         backgroundImage: 'none',
     },
     footer: {
-        position: 'fixed',
+        position: 'relative',
         bottom: 0,
         left: 0,
         width: '100%',
@@ -39,6 +39,12 @@ const styles = {
     },
     bodyText: {
         textAlign: 'justify',
+        // minHeight: '500px',
+
+    },
+    site: {
+        marginBottom: '100px',
+        minHeight: '512px',
     },
 }
 
@@ -51,18 +57,20 @@ const ListLink = props => (
 export default function Layout({ children }) {
     return (
         <div style={styles.main}>
-            <header style={styles.header}>
-                <Link to='/' style={styles.titleLink}>
-                    <h3 style={styles.title}>Zein Hajj-Ali</h3>
-                </Link>
-                <ul style={styles.ulStyle}>
-                    <ListLink to='/'>Home</ListLink>
-                    <ListLink to='/about'>About</ListLink>
-                    <ListLink to='/contact'>Contact</ListLink>
-                </ul>
-            </header>
-            <div style={styles.bodyText}>
-                {children}
+            <div style={styles.site}>
+                <header style={styles.header}>
+                    <Link to='/' style={styles.titleLink}>
+                        <h3 style={styles.title}>Zein Hajj-Ali</h3>
+                    </Link>
+                    <ul style={styles.ulStyle}>
+                        <ListLink to='/'>Home</ListLink>
+                        <ListLink to='/about'>About</ListLink>
+                        <ListLink to='/contact'>Contact</ListLink>
+                    </ul>
+                </header>
+                <div style={styles.bodyText}>
+                    {children}
+                </div>
             </div>
             <footer style={styles.footer}>
                 © 2020 Zein Hajj-Ali · <a style={styles.link} href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
