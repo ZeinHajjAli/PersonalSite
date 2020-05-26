@@ -44,7 +44,7 @@ const styles = {
     },
     site: {
         marginBottom: '100px',
-        minHeight: '512px',
+        minHeight: '510px',
     },
 }
 
@@ -64,6 +64,7 @@ export default function Layout({ children }) {
                     </Link>
                     <ul style={styles.ulStyle}>
                         <ListLink to='/'>Home</ListLink>
+                        <ListLink to='/projects'>Projects</ListLink>
                         <ListLink to='/about'>About</ListLink>
                         <ListLink to='/contact'>Contact</ListLink>
                     </ul>
