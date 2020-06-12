@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
+import GSBRGif from '../../../static/projectFiles/gyroscopeRobot/GSBR.gif'
 
 const styles = {
     link: {
@@ -22,7 +23,7 @@ export default function projectTemplate() {
         <Layout>
             <Header headerText={'Gyroscope Self-Balancing Robot'} />
             <p>The Gyroscope Self-Balancing Robot (GSBR) project has ended. Previous posts on the progress and results can be found on this site. A more detailed and better edited look at the project can be found in the final report that the team has written up <ProjectLink to="/projectFiles/gyroscopeRobot/ZeinHajjAli-GSBR-FinalReport.pdf">here</ProjectLink> or as a download <ProjectLink to="/projectFiles/gyroscopeRobot/ZeinHajjAli-GSBR-FinalReport.pdf" download="ZeinHajjAli-GSBR-FinalReport.pdf">here</ProjectLink>. The source code and testing code can all be found at the Github page <ProjectLink to="https://github.com/ZeinHajjAli/4805-selfBalancingRobot">here</ProjectLink>.</p>
-            <div style={{textAlign:'center'}}><img src="/projectFiles/gyroscopeRobot/GSBR.gif" alt="Robot Balancing" /></div>
+            <div style={{textAlign:'center'}}><img src={GSBRGif} alt="Robot Balancing" /></div>
         
             <h2>Note</h2>
             <p>The following is a condensed and reorderd version of the original posts on my previous project site: </p>
