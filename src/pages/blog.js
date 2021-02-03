@@ -1,6 +1,8 @@
 import React from 'react'
+import Header from '../components/header'
 import Layout from '../components/layout'
 import SiteHelmet from '../components/helmet'
+import { Link } from 'gatsby'
 
 const styles = {
     ulStyle: {
@@ -15,24 +17,20 @@ const styles = {
         color: 'black',
         backgroundImage: 'none',
     },
-    topText: {
-        fontSize: 100,
-        textAlign: 'center',
-    },
-    bottomText: {
-        fontSize: 25,
-        textAlign: 'center',
-    },
 }
 
-export default function PageNotFound() {
+const ListLink = props => (
+    <li style={styles.listItem}>
+        <Link style={styles.link} to={props.to}><u>{props.children}</u></Link>
+    </li>
+)
+
+export default function Blog() {
     return (
         <Layout>
-            <SiteHelmet titleText={"Page Not Found"} />
+            <SiteHelmet titleText={"Blog"} />
+            <Header headerText={'Blog'} />
 
-            <h1 style={styles.topText}>404</h1>
-
-            <p style={styles.bottomText}>Sorry, the page you were looking for does not exist.</p>
         </Layout>
     )
 }

@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Layout from '../components/layout'
 import SiteHelmet from '../components/helmet'
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
+import { FaOrcid } from 'react-icons/fa'
 
 const styles = {
     homepage: {
@@ -44,6 +45,7 @@ export default function Home() {
             <p style={styles.iconRow}>
                 <a style={styles.link} href="https://github.com/ZeinHajjAli" target="_blank" rel="noopener noreferrer"> <AiFillGithub style={styles.favicon}/> </a>
                 <a style={styles.link} href="https://www.linkedin.com/in/zeinhajjali/" target="_blank" rel="noopener noreferrer"> <AiFillLinkedin style={styles.favicon}/> </a>
+                <a style={styles.link} href="https://orcid.org/0000-0003-3919-1193" target="_blank" rel="noopener noreferrer"> <FaOrcid style={styles.favicon}/> </a>
                 <a style={styles.link} href="mailto:zeinhajjali@outlook.com" target="_blank" rel="noopener noreferrer"> <AiFillMail style={styles.favicon}/> </a>
             </p>
             </div>
