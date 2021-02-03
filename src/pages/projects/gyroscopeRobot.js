@@ -19,7 +19,7 @@ const ProjectLink = props => (
         <a style={styles.link} href={props.to} download={props.download}><u>{props.children}</u></a>
 )
 
-export default function projectTemplate() {
+export default function gyroscopeRobot() {
     return (
         <Layout>
             <SiteHelmet titleText={"GSBR"} />

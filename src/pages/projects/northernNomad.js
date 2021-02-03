@@ -14,13 +14,13 @@ const ProjectLink = props => (
         <a style={styles.link} href={props.to} download={props.download}><u>{props.children}</u></a>
 )
 
-export default function northernnomad() {
+export default function northernNomad() {
     return (
         <Layout>
             <SiteHelmet titleText={"NNSI"} />
             <Header headerText={'Northern Nomad System Integration Project'} />
 
-            <p>The following is a condensed and reorderd version of the original posts on my previous project site: </p>
+            <p>The following is a condensed and reordered version of the original posts on my previous project site: </p>
         
             <h2>Project Conlusion Update</h2>
             <p>The Northern Nomad Systems Integration (NNSI) project has ended, and the final report has been submitted to the supervising professor and second reader. The project did not warrant a Github page. Instead, I have made the final report available for reading <ProjectLink to="/projectFiles/northernNomad/ZeinHajjAli-NNSI-FinalReport.pdf">here</ProjectLink>, or for download <ProjectLink to="/projectFiles/northernNomad/ZeinHajjAli-NNSI-FinalReport.pdf" download="ZeinHajjAli-NNSI-FinalReport.pdf">here</ProjectLink>.</p>
