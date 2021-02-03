@@ -16,6 +16,7 @@ const ProjectLink = props => (
 export default function projectTemplate() {
     return (
         <Layout>
+            <SiteHelmet titleText={"Project Name"} />
             <Header headerText={'Project Name'} />
             <p>Project body</p>
         </Layout>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
+import SiteHelmet from '../../components/helmet'
 import GSBRGif from '../../../static/projectFiles/gyroscopeRobot/GSBR.gif'
 
 const styles = {
@@ -21,6 +22,7 @@ const ProjectLink = props => (
 export default function projectTemplate() {
     return (
         <Layout>
+            <SiteHelmet titleText={"GSBR"} />
             <Header headerText={'Gyroscope Self-Balancing Robot'} />
             <p>The Gyroscope Self-Balancing Robot (GSBR) project has ended. Previous posts on the progress and results can be found on this site. A more detailed and better edited look at the project can be found in the final report that the team has written up <ProjectLink to="/projectFiles/gyroscopeRobot/ZeinHajjAli-GSBR-FinalReport.pdf">here</ProjectLink> or as a download <ProjectLink to="/projectFiles/gyroscopeRobot/ZeinHajjAli-GSBR-FinalReport.pdf" download="ZeinHajjAli-GSBR-FinalReport.pdf">here</ProjectLink>. The source code and testing code can all be found at the Github page <ProjectLink to="https://github.com/ZeinHajjAli/4805-selfBalancingRobot">here</ProjectLink>.</p>
             <div style={{textAlign:'center'}}><img src={GSBRGif} alt="Robot Balancing" /></div>
@@ -199,7 +201,7 @@ export default function projectTemplate() {
             <p>We ran into more than a few issues during testing, mostly to do with the motor drivers and the batteries attached. We were not able to run the Arduino, the gyroscope, and the motors/motor driver all off of the 4 AAA battery pack, and so we decided to connect a 9V battery directly to the motor driver. Unfortunately, once the 9V loses a bit of charge, the maximum motor speed would decrease, which changes the needed PID constants to keep the robot upright, and makes testing and demoing the robot without a rechargeable battery pack a hassle.</p>
             <h3>Final Demo</h3>
             <p>We bought many batteries to test with and kept one aside to demo the project to the professor and the teaching assistants. As soon as we connected the battery, only one wheel was spinning, and we first thought that our battery was mixed up with one that was dying. Upon further inspection, one of the connections from the motor to the motor driver was loose, and the robot worked well after fixing the issue.</p>
-            <iframe width="590" height="494" src="https://www.youtube.com/embed/aJF67wwZkME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="590" height="494" src="https://www.youtube.com/embed/aJF67wwZkME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Demo Video" allowfullscreen></iframe>
             <h3>Final Deliverables</h3>
             <p>The final project report is currently being finalized, and will be submitted by tomorrow to the professor. I will also upload it to the site as a PDF. The Github page has been kept up to date, since we used it for source code version control and collaborative programming efforts.</p>
             <h3>Conclusion & Final Thoughts</h3>

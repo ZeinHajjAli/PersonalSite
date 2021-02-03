@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header'
 import Layout from '../components/layout'
+import SiteHelmet from '../components/helmet'
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
 
 const styles = {
@@ -34,6 +35,7 @@ const styles = {
 export default function Home() {
     return (
         <Layout>
+            <SiteHelmet titleText={"Home"} />
             <Header headerText={""} />
             <div style={styles.homepage}>
             <p style={styles.body}>Hi, my name is </p> 

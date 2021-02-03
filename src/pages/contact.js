@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header'
 import Layout from '../components/layout'
+import SiteHelmet from '../components/helmet'
 
 const styles = {
     link: {
@@ -12,6 +13,7 @@ const styles = {
 export default function Contact() {
     return (
         <Layout>
+            <SiteHelmet titleText={"Contact Me"} />
             <Header headerText="Contact Me" />
             <p>You can contact me using any of the following:</p>
             <ul>

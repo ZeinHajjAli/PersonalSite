@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header'
 import Layout from '../components/layout'
+import SiteHelmet from '../components/helmet'
 import { Link } from 'gatsby'
 
 const styles = {
@@ -24,9 +25,10 @@ const ListLink = props => (
     </li>
 )
 
-export default function About() {
+export default function Projects() {
     return (
         <Layout>
+            <SiteHelmet titleText={"Projects"} />
             <Header headerText={'Projects'} />
 
             <ListLink to='/projects/gyroscopeRobot'>May 25th, 2020: Gyroscope Self-Balancing Robot</ListLink>

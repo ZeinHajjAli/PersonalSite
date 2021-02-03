@@ -65,6 +65,7 @@ export default function Layout({ children }) {
                     <ul style={styles.ulStyle}>
                         <ListLink to='/'>Home</ListLink>
                         <ListLink to='/projects'>Projects</ListLink>
+                        <ListLink to='/blog'>Blog</ListLink>
                         <ListLink to='/about'>About</ListLink>
                         <ListLink to='/contact'>Contact</ListLink>
                     </ul>
@@ -74,7 +75,7 @@ export default function Layout({ children }) {
                 </div>
             </div>
             <footer style={styles.footer}>
-                © 2020 Zein Hajj-Ali · <a style={styles.link} href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+                © 2021 Zein Hajj-Ali · <a style={styles.link} href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
             </footer>
         </div>
     )

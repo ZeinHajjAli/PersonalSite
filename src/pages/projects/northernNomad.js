@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
+import SiteHelmet from '../../components/helmet'
 
 const styles = {
     link: {
@@ -16,6 +17,7 @@ const ProjectLink = props => (
 export default function northernnomad() {
     return (
         <Layout>
+            <SiteHelmet titleText={"NNSI"} />
             <Header headerText={'Northern Nomad System Integration Project'} />
 
             <p>The following is a condensed and reorderd version of the original posts on my previous project site: </p>
