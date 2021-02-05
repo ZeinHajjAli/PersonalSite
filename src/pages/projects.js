@@ -31,6 +31,7 @@ export default function Projects() {
             <SiteHelmet titleText={"Projects"} />
             <Header headerText={'Projects'} />
 
+            <ListLink to='/projects/modelingCO2Classroom'>Nov 13th, 2020: Modeling CO2 in a Classroom - A Cell-DEVS Model</ListLink>
             <ListLink to='/projects/typicalHomeNetwork'>Oct 24th, 2020: Typical Home Network - A Cadmium Simulation</ListLink>
             <ListLink to='/projects/gyroscopeRobot'>May 25th, 2020: Gyroscope Self-Balancing Robot</ListLink>
             <ListLink to='/projects/northernNomad'>May 25th, 2020: Northern Nomad System Integration Project</ListLink>
