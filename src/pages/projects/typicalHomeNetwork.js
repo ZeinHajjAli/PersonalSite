@@ -25,7 +25,7 @@ export default function typicalHomeNetwork() {
     return (
         <Layout>
             <SiteHelmet titleText={"THN"} />
-            <Header headerText={'Typical Home Network - A Cadmium Simulation'} />
+            <Header headerText={'Modeling a Typical Home Network'} />
 
             <p>The following mini-project was made as a solution to an assignment for one of my graduate studies courses in the fall of 2020. The project's Github repo can be found <ProjectLink to={'https://github.com/ZeinHajjAli/Cadmium-TypicalHomeNetwork'}>here</ProjectLink>. A pdf version of this report can be found <ProjectLink to={'/projectFiles/typicalHomeNetwork/ZeinHajjAli-THN-FinalReport.pdf'}>here.</ProjectLink></p>
         
