@@ -34,8 +34,8 @@ export default function Projects() {
             <ListLink to='/projects/maskEffectsModel'><strong>22/12/20:</strong> Effects of Different Masks on the Spread of Viral Particles</ListLink>
             <ListLink to='/projects/modelingCO2Classroom'><strong>13/11/20:</strong> Modeling CO<sub>2</sub> in a Classroom with Barriers</ListLink>
             <ListLink to='/projects/typicalHomeNetwork'><strong>24/10/20:</strong> Modeling a Typical Home Network</ListLink>
-            <ListLink to='/projects/gyroscopeRobot'><strong>25/05/20:</strong> Gyroscope Self-Balancing Robot</ListLink>
-            <ListLink to='/projects/northernNomad'><strong>25/05/20:</strong> Northern Nomad System Integration Project</ListLink>
+            <ListLink to='/projects/gyroscopeRobot'><strong>25/05/19:</strong> Gyroscope Self-Balancing Robot</ListLink>
+            <ListLink to='/projects/northernNomad'><strong>25/05/19:</strong> Northern Nomad System Integration Project</ListLink>
         </Layout>
     )
 }
